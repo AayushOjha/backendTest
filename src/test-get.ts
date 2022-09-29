@@ -118,12 +118,15 @@ const getRequest = () => {
   console.log('doing GET request to backend');
 
   axios
-    .get(`http://localhost:3000/admin/api/websites/1/pages/3?client_id=1`, {
-      headers: {
-        'Access-Token':
-          'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQ3OTc0NTJ9.hz0PNfrLAR1Mfk04iL-wQ7-m1y-SmS2lPih7MfIVNE0',
-      },
-    })
+    .get(
+      `http://localhost:3000/admin/api/websites/${websiteId}/pages/${pageId}?client_id=1`,
+      {
+        headers: {
+          'Access-Token':
+            'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQ3OTc0NTJ9.hz0PNfrLAR1Mfk04iL-wQ7-m1y-SmS2lPih7MfIVNE0',
+        },
+      }
+    )
     .then((response) => {
       console.log(response.data);
       console.log(`\nSUCCESS\ncheck if the produced data is of type IEditor`);

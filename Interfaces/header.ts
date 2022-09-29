@@ -5,7 +5,7 @@ export type typesOfHeading =
   | { name: 'H3'; code: 'h3' }
   | { name: 'H4'; code: 'h4' }
   | { name: 'H5'; code: 'h5' }
-  | { name: 'H6'; code: 'h6' }
+  | { name: 'H6'; code: 'h6' };
 
 export enum ESectionTypes {
   product_section = 'product_section',
@@ -24,19 +24,29 @@ export enum ESectionNames {
 }
 
 export interface IHeader {
-  id: number | null
-  section_type: ESectionTypes
-  name: ESectionNames
-  position: number
-  heading: string
-  heading_type: typesOfHeading
-  heading_description: string
-  display_full_description: boolean
+  id: number | null;
+  section_type:
+    | 'product_section'
+    | 'question_and_answers'
+    | 'quick_links'
+    | 'review_section'
+    | 'basic_card';
+  name:
+    | 'Product Section'
+    | 'QuestionAndAnswer'
+    | 'Quick Links'
+    | 'Review Section'
+    | 'BasicCard';
+  position: number;
+  heading: string;
+  heading_type: typesOfHeading;
+  heading_description: string;
+  display_full_description: boolean;
 }
 
 export interface IHeaderOptionalSettings {
   fieldVisiablity: {
-    heading: boolean
-    description: boolean
-  }
+    heading: boolean;
+    description: boolean;
+  };
 }
