@@ -1,7 +1,7 @@
 import { IEditor } from '../Interfaces/Editor';
 
 let x: IEditor = {
-  page_data: [
+  sections: [
     {
       id: null,
       section_type: 'basic_card',

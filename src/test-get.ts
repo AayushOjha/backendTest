@@ -66,46 +66,107 @@ let x = [
 ];
 
 let cx: IEditor = {
-  page_data: [
+  sections: [
     {
       id: null,
       section_type: 'basic_card',
-      name: 'basic_card',
+      name: 'Basic Card',
       position: 0,
-      heading: 'aaa',
-      heading_description: '',
+      heading: 'Here We have data',
+      heading_description: '<p>Here We have data</p>',
       heading_type: '',
-      display_full_description: false,
-      cardType: CardTypes.onlyText,
+      display_full_description: true,
+      cardType: 'TWO_COLUMN',
       cards: [
         {
           id: null,
           position: 0,
-          title: '',
+          title: 'Here We have data',
           image: [],
           action: {
-            action_name: '',
-            action_link: '',
+            action_name: 'Here We have data',
+            action_link: 'Here We have data',
           },
           sub_title: '',
-          content: '',
+          content: '<p>Here We have data</p>',
+        },
+        {
+          id: null,
+          position: 1,
+          title: 'Here We have data',
+          image: [],
+          action: {
+            action_name: 'Here We have data',
+            action_link: 'Here We have data',
+          },
+          sub_title: '',
+          content: '<p>Here We have data</p>',
         },
       ],
     },
     {
       id: null,
       section_type: 'question_and_answers',
-      name: 'question_and_answers',
-      position: 0,
-      heading: 'qa',
+      name: 'Question and Answer',
+      position: 1,
+      heading: 'Here We have data',
       heading_type: '',
-      heading_description: '',
+      heading_description: '<p>Here We have data</p>',
       display_full_description: false,
       components: [
         {
           position: 0,
-          question: 'kitne kitne card',
-          answer: 'qa me ek, or BC me 2',
+          question: 'Here We have data',
+          answer: 'Here We have data',
+        },
+        {
+          position: 1,
+          question: 'Here We have data',
+          answer: 'Here We have data',
+        },
+      ],
+    },
+    {
+      id: null,
+      section_type: 'quick_links',
+      name: 'Quick Links',
+      position: 2,
+      heading: 'Here We have data',
+      heading_type: '',
+      heading_description: '<p>Here We have data</p>',
+      display_full_description: false,
+      link_cards: [
+        {
+          position: 0,
+          category_name: 'Here We have data',
+          links: [
+            {
+              position: 0,
+              action_name: 'Here We have data',
+              action_link: 'Here We have data',
+            },
+            {
+              position: 1,
+              action_name: 'Here We have data',
+              action_link: 'Here We have data',
+            },
+          ],
+        },
+        {
+          category_name: 'Here We have data',
+          position: 1,
+          links: [
+            {
+              position: 0,
+              action_name: 'Here We have data',
+              action_link: 'Here We have data',
+            },
+            {
+              position: 1,
+              action_name: '',
+              action_link: '',
+            },
+          ],
         },
       ],
     },
