@@ -13,14 +13,14 @@ export interface ILinkCard {
 
 export interface IQuickLinks extends IHeader {
   section_type: 'quick_links';
-  name: 'quick_links';
+  name: 'Quick Links';
   link_cards: ILinkCard[];
 }
 
 export const emptyQuickLinks: IQuickLinks = {
   id: null,
   section_type: 'quick_links',
-  name: 'quick_links',
+  name: 'Quick Links',
   position: 0,
   heading: '',
   heading_type: '',

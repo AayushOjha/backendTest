@@ -7,14 +7,14 @@ export interface IQuestionAndAnswerUnit {
 }
 export interface IQuestionAndAnswer extends IHeader {
   section_type: 'question_and_answers';
-  name: 'question_and_answers';
+  name: 'Question and Answer';
   components: IQuestionAndAnswerUnit[];
 }
 
 export const emptyQuestionAndAnswer: IQuestionAndAnswer = {
   id: null,
   section_type: 'question_and_answers',
-  name: 'question_and_answers',
+  name: 'Question and Answer',
   position: 0,
   heading: '',
   heading_type: '',

@@ -17,10 +17,10 @@ export enum ESectionTypes {
 
 export enum ESectionNames {
   product_section = 'Product Section',
-  question_and_answers = 'QuestionAndAnswer',
+  question_and_answers = 'Question and Answer',
   quick_links = 'Quick Links',
   review_section = 'Review Section',
-  basic_card = 'BasicCard',
+  basic_card = 'Basic Card',
 }
 
 export interface IHeader {
@@ -32,11 +32,11 @@ export interface IHeader {
     | 'review_section'
     | 'basic_card';
   name:
-    | 'product_section'
-    | 'question_and_answers'
-    | 'quick_links'
-    | 'review_section'
-    | 'basic_card';
+    | 'Product Section'
+    | 'Question and Answer'
+    | 'Quick Links'
+    | 'Review Section'
+    | 'Basic Card';
   position: number;
   heading: string;
   heading_type: typesOfHeading;
