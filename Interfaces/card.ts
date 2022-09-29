@@ -1,5 +1,5 @@
-import { IImage, IAction } from './commonInterfaces'
-import { IHeader, ESectionNames, ESectionTypes } from './header'
+import { IImage, IAction } from './commonInterfaces';
+import { IHeader, ESectionNames, ESectionTypes } from './header';
 
 export enum CardTypes {
   twoColumn = 'TWO_COLUMN',
@@ -12,38 +12,38 @@ export enum CardTypes {
   onlyText = 'ONLY_TEXT',
 }
 export interface ICard {
-  id: number | null
-  position: number
-  title: string
-  image: IImage[]
-  action: IAction
-  sub_title: string
-  content: string
+  id: number | null;
+  position: number;
+  title: string;
+  image: IImage[];
+  action: IAction;
+  sub_title: string;
+  content: string;
 }
 
 export interface ICardOptionalSettings {
   fieldVisiablity: {
-    title: boolean
-    action: boolean
-    sub_title: boolean
-    content: boolean
-    image: boolean
-    multipleCard: boolean
-    cardVisiable: boolean
-  }
+    title: boolean;
+    action: boolean;
+    sub_title: boolean;
+    content: boolean;
+    image: boolean;
+    multipleCard: boolean;
+    cardVisiable: boolean;
+  };
 }
 
 export interface ICardSection extends IHeader {
-  section_type: ESectionTypes.basic_card
-  name: ESectionNames.basic_card
-  cardType: CardTypes
-  cards: ICard[]
+  section_type: 'basic_card';
+  name: 'basic_card';
+  cardType: CardTypes;
+  cards: ICard[];
 }
 
 export const emptyCardSection: ICardSection = {
   id: null,
-  section_type: ESectionTypes.basic_card,
-  name: ESectionNames.basic_card,
+  section_type: 'basic_card',
+  name: 'basic_card',
   position: 0,
   heading: '',
   heading_description: '',
@@ -61,7 +61,7 @@ export const emptyCardSection: ICardSection = {
       content: '',
     },
   ],
-}
+};
 
 export const emptyCard: ICard = {
   id: null,
@@ -71,4 +71,4 @@ export const emptyCard: ICard = {
   action: { action_name: '', action_link: '' },
   sub_title: '',
   content: '',
-}
+};

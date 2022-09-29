@@ -32,11 +32,11 @@ export interface IHeader {
     | 'review_section'
     | 'basic_card';
   name:
-    | 'Product Section'
-    | 'QuestionAndAnswer'
-    | 'Quick Links'
-    | 'Review Section'
-    | 'BasicCard';
+    | 'product_section'
+    | 'question_and_answers'
+    | 'quick_links'
+    | 'review_section'
+    | 'basic_card';
   position: number;
   heading: string;
   heading_type: typesOfHeading;

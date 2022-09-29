@@ -69,8 +69,8 @@ let cx: IEditor = {
   page_data: [
     {
       id: null,
-      section_type: ESectionTypes.basic_card,
-      name: ESectionNames.basic_card,
+      section_type: 'basic_card',
+      name: 'basic_card',
       position: 0,
       heading: 'aaa',
       heading_description: '',
@@ -94,8 +94,8 @@ let cx: IEditor = {
     },
     {
       id: null,
-      section_type: ESectionTypes.question_and_answers,
-      name: ESectionNames.question_and_answers,
+      section_type: 'question_and_answers',
+      name: 'question_and_answers',
       position: 0,
       heading: 'qa',
       heading_type: '',
