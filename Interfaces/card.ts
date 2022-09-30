@@ -34,9 +34,17 @@ export interface ICardOptionalSettings {
 }
 
 export interface ICardSection extends IHeader {
-  section_type: ESectionTypes.basic_card
-  name: ESectionNames.basic_card
-  cardType: CardTypes
+  section_type: 'basic_card';
+  name: 'Basic Card';
+  cardType:
+    | 'TWO_COLUMN'
+    | 'THREE_COLUMN'
+    | 'FOUR_COLUMN'
+    | 'HALF_SPLIT'
+    | 'TAB_HIGHLIGHT'
+    | 'IMAGE_SLIDER'
+    | 'VIDEO_TYPE'
+    | 'ONLY_TEXT';
   cards: ICard[]
 }
 

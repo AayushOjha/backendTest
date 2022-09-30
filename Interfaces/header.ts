@@ -25,9 +25,19 @@ export enum ESectionNames {
 
 export interface IHeader {
   id: number | null
-  section_type: ESectionTypes
+  section_type:
+    | 'product_section'
+    | 'question_and_answers'
+    | 'quick_links'
+    | 'review_section'
+    | 'basic_card';
+  name:
+    | 'Product Section'
+    | 'Question and Answer'
+    | 'Quick Links'
+    | 'Review Section'
+    | 'Basic Card';
   state: 'active'
-  name: ESectionNames
   position: number
   heading: string
   heading_type: typesOfHeading

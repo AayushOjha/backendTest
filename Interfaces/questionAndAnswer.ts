@@ -6,14 +6,15 @@ export interface IQuestionAndAnswerUnit {
   answer: string
 }
 export interface IQuestionAndAnswer extends IHeader {
-  section_type: ESectionTypes.question_and_answers
+  section_type: 'question_and_answers',
+  name: 'Question and Answer',
   components: IQuestionAndAnswerUnit[]
 }
 
 export const emptyQuestionAndAnswer: IQuestionAndAnswer = {
   id: null,
-  section_type: ESectionTypes.question_and_answers,
-  name: ESectionNames.question_and_answers,
+  section_type: 'question_and_answers',
+  name: 'Question and Answer',
   state: 'active',
   position: 0,
   heading: '',

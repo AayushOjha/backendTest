@@ -12,8 +12,8 @@ export interface ILinkCard {
 }
 
 export interface IQuickLinks extends IHeader {
-  section_type: ESectionTypes.quick_links
-  name: ESectionNames.quick_links
+  section_type: 'quick_links';
+  name: 'Quick Links';
   components: ILinkCard[]
 }
 
