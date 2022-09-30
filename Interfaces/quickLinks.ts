@@ -1,32 +1,33 @@
-import { IHeader, ESectionNames, ESectionTypes } from './header';
-import { IAction } from './commonInterfaces';
+import { IHeader, ESectionNames, ESectionTypes } from './header'
+import { IAction } from './commonInterfaces'
 
 export interface ILink extends IAction {
-  position: number;
+  position: number
 }
 
 export interface ILinkCard {
-  category_name: string;
-  position: number;
-  links: ILink[];
+  category_name: string
+  position: number
+  links: ILink[]
 }
 
 export interface IQuickLinks extends IHeader {
-  section_type: 'quick_links';
-  name: 'Quick Links';
-  link_cards: ILinkCard[];
+  section_type: ESectionTypes.quick_links
+  name: ESectionNames.quick_links
+  components: ILinkCard[]
 }
 
 export const emptyQuickLinks: IQuickLinks = {
   id: null,
-  section_type: 'quick_links',
-  name: 'Quick Links',
+  section_type: ESectionTypes.quick_links,
+  name: ESectionNames.quick_links,
+  state: 'active',
   position: 0,
   heading: '',
   heading_type: '',
   heading_description: '',
   display_full_description: false,
-  link_cards: [
+  components: [
     {
       position: 0,
       category_name: '',
@@ -39,4 +40,4 @@ export const emptyQuickLinks: IQuickLinks = {
       ],
     },
   ],
-};
+}

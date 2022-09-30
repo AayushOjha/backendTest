@@ -1,25 +1,25 @@
-import { IHeader, ESectionNames, ESectionTypes } from './header';
-import { IImage } from './commonInterfaces';
+import { IHeader, ESectionNames, ESectionTypes } from './header'
+import { IImage } from './commonInterfaces'
 export interface IReviewCard {
-  position: number;
-  customerName: string;
-  profilePicture: IImage | null;
-  rating: number;
-  reviewText: string;
-  reviewImages: IImage[];
-  productName: string;
+  position: number
+  customerName: string
+  profilePicture: IImage | null
+  rating: number
+  reviewText: string
+  reviewImages: IImage[]
+  productName: string
 }
 
 export interface IReviewComponent extends IHeader {
-  section_type: 'review_section';
-  name: 'review_section';
-  reviews: IReviewCard[];
+  section_type: ESectionTypes.review_section
+  reviews: IReviewCard[]
 }
 
 export const emptyReviewComponent: IReviewComponent = {
   id: null,
-  section_type: 'review_section',
-  name: 'review_section',
+  section_type: ESectionTypes.review_section,
+  name: ESectionNames.review_section,
+  state: 'active',
   position: 0,
   heading: '',
   heading_type: '',
@@ -36,4 +36,4 @@ export const emptyReviewComponent: IReviewComponent = {
       productName: '',
     },
   ],
-};
+}
